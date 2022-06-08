@@ -13,6 +13,16 @@ git push origin master: envia os arquivos para o repositório remoto que você e
 git checkout -b <nomeDaBranch>: cria uma nova branch
 git checkout <nomeDaBranch>: alterna para a branch especificada
 
+Exemplos de uso
+	git add *
+
+	git commit -m “Atualização do projeto”
+
+	git remote add origin https://github.com/RosaneStream/SBFD_DIO.git
+
+	git push origin master
+
+
 Link para o tutorial Markdown basico
 
 https://www.markdownguide.org/basic-syntax/
