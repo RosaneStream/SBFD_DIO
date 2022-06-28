@@ -27,3 +27,4 @@ function addTask(description) {
 
 	taskList.appendChild(taskContainer);
 }
+
