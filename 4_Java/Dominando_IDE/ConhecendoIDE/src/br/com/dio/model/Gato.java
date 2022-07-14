@@ -31,8 +31,6 @@ public class Gato {
 			this.cor = cor;
 			this.idade = idade;
 		}
-		public Gato() {
-			// TODO Auto-generated constructor stub
-		}
+		public Gato() {}
 		
 }
