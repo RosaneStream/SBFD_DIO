@@ -1,0 +1,18 @@
+Fases do projeto:
+
+   Documentos do produto:
+      Aceites:     documentos de aprovação do usuário. Ex. aprovação da análise de requisitos, aprovação do plano e caso
+      de testes, etc.
+      Fontes:      códigos fonte do software;
+      Guias:        documentos que auxiliam no uso ou instalação do produto. Ex. Guia do usuário, Guia do Help Desk, etc
+      PDS:       toda documentação exigida no processo de desenvolvimento. Ex. Análise de requisitos, Modelagem da
+      solução, Plano de testes, etc.
+      Reuniões: documentação das reuniões realizadas para tratar do desenvolvimento do software.
+   Documentos do projeto:
+      Aceites:      documentos de aprovação do usuário. Ex: aprovação da análise de impacto, aprovação do plano de
+      implantação e retorno;
+      EPT:        documentos acompanhados pelo EPT, ou seja, plano do projeto, cronograma, relatórios de acompanhamento
+      e de encerramento;
+      Reuniões:  documentação das reuniões realizadas para tratar do andamento do projeto.
+      Análise de Impacto
+      Plano de Implantação e Retorno

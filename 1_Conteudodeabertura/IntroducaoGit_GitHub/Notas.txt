@@ -14,6 +14,7 @@ git checkout -b <nomeDaBranch>: cria uma nova branch
 git checkout <nomeDaBranch>: alterna para a branch especificada
 
 Exemplos de uso
+      git init
 	git add *
 
 	git commit -m “Atualização do projeto”

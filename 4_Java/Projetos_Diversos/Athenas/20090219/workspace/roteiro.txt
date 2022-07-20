@@ -1,0 +1,18 @@
+1 - criar o banco de dados (hsqldb);
+    	script.txt (sql)
+	hsqldb.bat
+
+2 - definir datasource;
+	exemplo-db-ds.xml
+	copiá-lo para "C:\ambiente copel\jboss\server\default\deploy"
+
+3 - desenvolver a aplicação J2EE com os entities e sessions beans;
+	não esquecer do arquivo "META-INF\persistence.xml" 
+	incluir o projeto EJB no projeto EAR
+	incluir o projeto EAR no servidor
+	executar o servidor
+
+4 - aplicação cliente chamando os métodos desenvolvidos;
+	não esquecer do "jndi.properties"
+    
+    
