@@ -1,3 +1,4 @@
+package br.com.dio.dominio.base;
 
 public interface IConta {
 	

@@ -78,3 +78,16 @@ flex-shrink - Especifica o quanto um item flexível diminuirá em relação ao r
 flex-wrap - Especifica se os itens flexíveis devem ser agrupados ou não, se não houver espaço suficiente para eles em uma linha flexível.
 justify-content - Alinha horizontalmente os itens flexíveis quando os itens não usam todo o espaço disponível no eixo principal.
 order - Especifica a ordem dos itens flexíveis dentro do mesmo contêiner.
+
+echo "# FlexBox_CSS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M 'main'
+git remote add origin https://github.com/RosaneStream/FlexBox_CSS.git
+git push -u origin 'main'
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/RosaneStream/FlexBox_CSS.git
+git branch -M 'main'
+git push -u origin 'main'
