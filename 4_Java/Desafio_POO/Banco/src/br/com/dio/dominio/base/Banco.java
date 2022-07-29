@@ -1,7 +1,7 @@
 package br.com.dio.dominio.base;
 
 import br.com.dio.dominio.caminho.GetPath;
-import br.com.dio.dominio.cadastro.lerInput;
+import br.com.dio.dominio.cadastro.*;
 
 import java.io.*;
 //import java.util.ArrayList;
@@ -58,7 +58,7 @@ public class Banco {
             BufferedReader item = new BufferedReader(readFile);
             String text = item.readLine();
             if (text != null){
-							  item.close();
+			    item.close();
                 return true;
             }
             item.close();
@@ -68,27 +68,7 @@ public class Banco {
         }
     }
 
-		public boolean contarBanco() {
-
-			try {
-
-					File file = new File(getDiretorio());
-					FileReader readerFile = new FileReader(file);
-					BufferedReader item = new BufferedReader(readerFile);
-					
-					String text = item.readLine();
-					if  (text != null) {
-							item.close();
-							return true;
-					}
-					item.close();
-					return false;
-			} catch (IOException e) {
-					System.out.println("Cadastro de banco não encontrado!");
-					return false;
-			}
-	}
-
+		
     public boolean gravarBanco() {
         try {
             // Fluxo de saida de um arquivo
@@ -113,7 +93,7 @@ public class Banco {
             String nome;
             String op;
 
-            if (!contarBanco()) {
+            if (existirBanco()) {
 
                 do {
                     id = ui.getString("Informe o numero do Banco: ");
@@ -143,5 +123,4 @@ public class Banco {
             //return false;
         }
     }
-
 }

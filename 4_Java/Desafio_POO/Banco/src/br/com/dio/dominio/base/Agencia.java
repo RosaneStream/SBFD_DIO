@@ -90,7 +90,7 @@ public class Agencia {
             return null;
         }
     }
-    public boolean agenciaExiste() {
+    public boolean existirAgencia() {
 
         try {
 
@@ -118,7 +118,7 @@ public class Agencia {
         }
     }
 
-    public boolean existirAgencia() {
+    public boolean existirCadastroAgencia() {
 
         try {
 
@@ -175,7 +175,7 @@ public class Agencia {
                 setNumeroAgencia(numeroAgencia);
                 setNomeAgencia(nomeAgencia);
 
-                if (agenciaExiste()){
+                if (existirAgencia()){
                     System.out.println("Agencia Cadastrada. Informe outro numero!");
                     op =0;
                 }else{

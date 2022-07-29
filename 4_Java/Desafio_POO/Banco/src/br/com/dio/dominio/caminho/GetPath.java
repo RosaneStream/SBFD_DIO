@@ -30,9 +30,6 @@ public class GetPath {
         Path nomeDiretorio = Paths.get("");
         String diretorio =  nomeDiretorio.toAbsolutePath().toString();
 
-//        System.out.println(diretorio);
-//        System.out.println(path);
-
         if (path.toFile().isFile()){
             diretorio += "/" + this.tabela;
             return diretorio;

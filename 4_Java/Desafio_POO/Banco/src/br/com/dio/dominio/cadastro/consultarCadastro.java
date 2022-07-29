@@ -21,9 +21,10 @@ public class consultarCadastro {
             return true;
         }
     }
+
     //Verificar se tem agência Cadastrada
     public boolean agenciaCadastrada(){
-        if(!agencia.existirAgencia()) {
+        if(!agencia.existirCadastroAgencia()) {
             System.out.println("Nenhuma agencia cadastrada. Cadastre ao menos uma!");
             System.out.println();
             return false;
@@ -42,23 +43,5 @@ public class consultarCadastro {
         }
     }
 
-    /*
-    public boolean contasCadastradas(String operacao){
-        int contador = conta.contarContas();
-        if (contador<1)
-        {
-            System.out.println("Cadastre uma conta para realizar a operação!");
-            System.out.println();
-            return false;
-
-        } else if ((contador < 2) && (operacao == "t")) {
-            System.out.println("Cadastre 2 contas para realizar a operação!");
-            System.out.println();
-            return false;
-        }  else{
-                return true;
-            }
-    }*/
-
-
+    
 }

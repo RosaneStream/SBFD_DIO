@@ -1,9 +1,23 @@
-package br.com.dio.desafio.dominio;
+package br.com.dio.dominio.base;
 
 import java.util.*;
 
+import br.com.dio.dominio.cadastro.*;
+
+
 public class Dev {
+
     private String nome;
+    private String diretorio;
+
+    public Dev(){
+        Cadastro arquivo = new Cadastro();
+        arquivo.setTabela("dev.txt");
+        this.setDiretorio(arquivo.criarTabela());
+    }
+    
+    public Dev(String nome){}
+
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
@@ -46,6 +60,14 @@ public class Dev {
         this.nome = nome;
     }
 
+    public String getDiretorio() {
+        return diretorio;
+    }
+
+    public void setDiretorio(String diretorio) {
+        this.diretorio = diretorio;
+    }
+    
     public Set<Conteudo> getConteudosInscritos() {
         return conteudosInscritos;
     }
@@ -74,4 +96,47 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
+
+    public void cadastrarDev() {
+
+        try {
+
+            lerInput ui = new lerInput();
+            String nome;
+        
+            int op;
+
+            do {
+                nome = ui.getString("Nome do desenvolvedor: ");
+ 
+                if (nome.equalsIgnoreCase("")) {
+                    System.out.println("Informe o nome do desenvolvedor!");
+                    System.out.println();
+                    op = ui.getInt("Deseja sair?  1 - Sim / 2 - Nao  ");
+                    if (op == 1) return;
+                }
+
+            }while (nome.equalsIgnoreCase(""));
+            
+            setNome(nome);
+
+            Cadastro cadastro = new Cadastro();
+
+            if(cadastro.existirTexto(nome,getDiretorio())) {
+                System.out.println("Desenvolvedor já existe no cadastro!");
+                return;
+            }   
+                String texto = getNome();
+
+                if (cadastro.gravarCadastro(getDiretorio(), texto)) {
+                    System.out.println("Desenvolvedor cadastrado com sucesso!");
+                } else {
+                    System.out.println("Erro no cadastro!");
+                }
+                
+        } catch (Exception e) {
+            return;
+        }
+    }
+
 }
