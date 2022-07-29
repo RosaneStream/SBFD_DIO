@@ -7,14 +7,18 @@ public class Main {
 
         Integer opcao=0;
         lerInput ui = new lerInput();
-        int cont = 10;
+        int cont = 8;
     do{
         System.out.println("Selecione:");
         System.out.println("1 - Cadastrar Bootcamp");
         System.out.println("2 - Cadastrar curso");
         System.out.println("3 - Cadastrar desenvolvedor");
         System.out.println("4 - Cadastrar mentoria");
-        System.out.println("5 - Sair");
+        System.out.println("5 - Matricular desenvolvedor");
+        System.out.println("6 - Finalizar mentoria");
+        System.out.println("7 - Finalizar curso");
+        
+        System.out.println("8 - Sair");
 
         try {
             do {
@@ -41,6 +45,11 @@ public class Main {
                     break;
                 case 5:
                     break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                    
                 default:
                     System.out.println("Operação finalizada!");
                     break;
